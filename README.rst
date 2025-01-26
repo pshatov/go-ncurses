@@ -9,7 +9,7 @@ This must include the header files and the shared library.
 Why Fork
 --------
 
-This fork fixes the issue_ in the original
+This fork fixes the `issue <https://github.com/seehuhn/go-ncurses/issues/3>`` in the original
 repository. The problematic line there was indeed commented out. For some reason the author didn't
 push an updated version tag after he committed that change. This way ``go get`` currently still
 downloads unpatched ``keys.go``, which won't compile.
@@ -30,4 +30,3 @@ pkg.go.dev_ or on the command line::
     godoc seehuhn.de/go/ncurses
 
 .. _pkg.go.dev: https://pkg.go.dev/seehuhn.de/go/ncurses
-.. _issue: : https://github.com/seehuhn/go-ncurses/issues/3
